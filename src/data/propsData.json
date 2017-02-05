@@ -1,0 +1,344 @@
+{
+  "animatable_properties" : [
+    {
+      "link" : "http://www.quackit.com/css/properties/css_background.cfm",
+      "prop_name" : "background"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_background-color.cfm",
+      "prop_name" : "background-color"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_background-position.cfm",
+      "prop_name" : "background-position"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_background-size.cfm",
+      "prop_name" : "background-size"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border.cfm",
+      "prop_name" : "border"
+    },   
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-color.cfm",
+      "prop_name" : "border-color"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-width.cfm",
+      "prop_name" : "border-width"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-bottom.cfm",
+      "prop_name" : "border-bottom"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-bottom-color.cfm",
+      "prop_name" : "border-bottom-color"
+    },   
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_border-bottom-left-radius.cfm",
+      "prop_name" : "border-bottom-left-radius"
+    },     
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_border-bottom-right-radius.cfm",
+      "prop_name" : "border-bottom-right-radius"
+    },   
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-bottom-width.cfm",
+      "prop_name" : "border-bottom-width"
+    }, 
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-left.cfm",
+      "prop_name" : "border-left"
+    },     
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-left-color.cfm",
+      "prop_name" : "border-left-color"
+    },   
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-left-width.cfm",
+      "prop_name" : "border-left-width"
+    }, 
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_border-radius.cfm",
+      "prop_name" : "border-radius"
+    },   
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-right.cfm",
+      "prop_name" : "border-right"
+    },     
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-right-color.cfm",
+      "prop_name" : "border-right-color"
+    },   
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-right-width.cfm",
+      "prop_name" : "border-right-width"
+    },   
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-spacing.cfm",
+      "prop_name" : "border-spacing"
+    }, 
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-top.cfm",
+      "prop_name" : "border-top"
+    },     
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-top-color.cfm",
+      "prop_name" : "border-top-color"
+    },     
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_border-top-left-radius.cfm",
+      "prop_name" : "border-top-left-radius"
+    },     
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_border-top-right-radius.cfm",
+      "prop_name" : "border-top-right-radius"
+    },       
+    {
+      "link" : "http://www.quackit.com/css/properties/css_border-top-width.cfm",
+      "prop_name" : "border-top-width"
+    },       
+    {
+      "link" : "http://www.quackit.com/css/properties/css_bottom.cfm",
+      "prop_name" : "bottom"
+    },         
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_box-shadow.cfm",
+      "prop_name" : "box-shadow"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_clip.cfm",
+      "prop_name" : "clip"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_color.cfm",
+      "prop_name" : "color"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_column-count.cfm",
+      "prop_name" : "column-count"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_column-gap.cfm",
+      "prop_name" : "column-gap"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_column-rule.cfm",
+      "prop_name" : "column-rule"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_column-rule-color.cfm",
+      "prop_name" : "column-rule-color"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_column-rule-width.cfm",
+      "prop_name" : "column-rule-width"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_column-width.cfm",
+      "prop_name" : "column-width"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_columns.cfm",
+      "prop_name" : "columns"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_filter.cfm",
+      "prop_name" : "filter"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_flex.cfm",
+      "prop_name" : "flex"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_flex-basis.cfm",
+      "prop_name" : "flex-basis"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_flex-grow.cfm",
+      "prop_name" : "flex-grow"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_flex-shrink.cfm",
+      "prop_name" : "flex-shrink"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_font.cfm",
+      "prop_name" : "font"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_font-size.cfm",
+      "prop_name" : "font-size"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_font-size-adjust.cfm",
+      "prop_name" : "font-size-adjust"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_font-stretch.cfm",
+      "prop_name" : "font-stretch"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_font-weight.cfm",
+      "prop_name" : "font-weight"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_height.cfm",
+      "prop_name" : "height"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_left.cfm",
+      "prop_name" : "left"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_letter-spacing.cfm",
+      "prop_name" : "letter-spacing"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_line-height.cfm",
+      "prop_name" : "line-height"
+    }, 
+    {
+      "link" : "http://www.quackit.com/css/properties/css_margin.cfm",
+      "prop_name" : "margin"
+    }, 
+    {
+      "link" : "http://www.quackit.com/css/properties/css_margin-bottom.cfm",
+      "prop_name" : "margin-bottom"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_margin-left.cfm",
+      "prop_name" : "margin-left"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_margin-right.cfm",
+      "prop_name" : "margin-right"
+    }, 
+    {
+      "link" : "http://www.quackit.com/css/properties/css_margin-top.cfm",
+      "prop_name" : "margin-top"
+    }, 
+    {
+      "link" : "http://www.quackit.com/css/properties/css_max-height.cfm",
+      "prop_name" : "max-height"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_max-width.cfm",
+      "prop_name" : "max-width"
+    }, 
+    {
+      "link" : "http://www.quackit.com/css/properties/css_min-height.cfm",
+      "prop_name" : "min-height"
+    },   
+    {
+      "link" : "http://www.quackit.com/css/properties/css_min-width.cfm",
+      "prop_name" : "min-width"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_opacity.cfm",
+      "prop_name" : "opacity"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_order.cfm",
+      "prop_name" : "order"
+    },   
+    {
+      "link" : "http://www.quackit.com/css/properties/css_outline.cfm",
+      "prop_name" : "outline"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_outline-color.cfm",
+      "prop_name" : "outline-color"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_outline-offset.cfm",
+      "prop_name" : "outline-offset"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_outline-width.cfm",
+      "prop_name" : "outline-width"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_padding.cfm",
+      "prop_name" : "padding"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_padding-bottom.cfm",
+      "prop_name" : "padding-bottom"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_padding-left.cfm",
+      "prop_name" : "padding-left"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_padding-right.cfm",
+      "prop_name" : "padding-right"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_padding-top.cfm",
+      "prop_name" : "padding-top"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_perspective.cfm",
+      "prop_name" : "perspective"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_perspective-origin.cfm",
+      "prop_name" : "perspective-origin"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_right.cfm",
+      "prop_name" : "right"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_tab-size.cfm",
+      "prop_name" : "tab-size"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_text-decoration.cfm",
+      "prop_name" : "text-decoration"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_text-decoration-color.cfm",
+      "prop_name" : "text-decoration-color"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_text-indent.cfm",
+      "prop_name" : "text-indent"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_text-shadow.cfm",
+      "prop_name" : "text-shadow"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_top.cfm",
+      "prop_name" : "top"
+    },
+    {
+      "link" : "http://www.quackit.com/css/css3/properties/css_transform.cfm",
+      "prop_name" : "transform"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_vertical-align.cfm",
+      "prop_name" : "vertical-align"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_visibility.cfm",
+      "prop_name" : "visibility"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_width.cfm",
+      "prop_name" : "width"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_word-spacing.cfm",
+      "prop_name" : "word-spacing"
+    },
+    {
+      "link" : "http://www.quackit.com/css/properties/css_z-index.cfm",
+      "prop_name" : "z-index"
+    }
+  ]
+}
