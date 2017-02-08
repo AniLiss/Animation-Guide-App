@@ -1,8 +1,8 @@
 import * as types from '../actions/action-types';
 
-export function loadHeaderContent(searchType) {
+export function loadLayoutContainer(searchType) {
     return {
-        type: types.LOAD_HEADER_CONTENT,
+        type: types.LOAD_LAYOUT_CONTENT,
         searchType
     };
 }
