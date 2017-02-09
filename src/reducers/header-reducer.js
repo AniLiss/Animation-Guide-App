@@ -1,20 +1,36 @@
-/**
- * Created by user on 04.02.2017.
- */
 import * as types from '../actions/action-types';
 
 const initialState = {
-    title: ''
+  selected_section: '',
+  sections: {
+    animation : [{
+      title: 'animation-delay',
+      link: 'animation_delay'
+    }, {
+      title: 'animation-direction',
+      link: 'animation_delay'
+    }, {
+      title: 'animation-duration',
+      link: 'animation_duration'
+    }],
+    easing : [{
+      title: 'easing-funcion'
+    }]
+  }
 };
 
-const headerContentReducer = function(state = initialState, action) {
 
-    switch(action.type) {
+export default function contentReducer(state = initialState, action) {
 
-        case types.LOAD_HEADER_CONTENT:
-            return { ...state, title: action.title };
-    }
+  switch (action.type) {
+
+    case types.LOAD_CONTENT:
+    return Object.assign({}, state, {
+      selected_section: action.title,
+      sections: state.sections[action.title]
+    });
+
+    default:
     return state;
+  }
 }
-
-export default headerContentReducer;

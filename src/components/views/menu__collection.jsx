@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 class MenuCollection extends Component {
     handler() {
@@ -8,11 +9,10 @@ class MenuCollection extends Component {
         return (
             <ul className='menu__collection'>
                 <li className='menu__collection-item menu__collection-item--active animation'>
-                    <a href=''>Animation</a>
-                    {/*onClick={::this.handler}*/}
+                    <Link to='/'>Animation</Link>
                 </li>
                 <li className='menu__collection-item easing'>
-                    <a href=''>Easing</a>
+                    <Link to='/easing'>Easing</Link>
                 </li>
             </ul>
         )

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import headerApi from '../../api/header-api';
 // import logo from '../../img/logo.svg';
 // import  './header.css';
@@ -8,15 +8,14 @@ import HeaderContent from '../layouts/header-content';
 
 class Header extends Component {
     componentDidMount() {
-    headerApi.getHeaderContent();
-    store.dispatch(loadHeaderContent());
-},
+    // headerApi.getHeaderContent();
+    // store.dispatch(loadHeaderContent());
+}
     render() {
         return (
             <header className='header'>
                 <div className='header-content-wrapper'>
-                    {/*<HeaderContent />*/}
-                    {headerApi.getHeaderContent();}
+                    <HeaderContent />
 
                 </div>
             </header>

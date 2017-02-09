@@ -11,7 +11,7 @@ class MainLayout extends Component {
         return (
             <section>
                 <Aside/>
-                <Header/>
+                {/*<Header/>*/}
                 <Layout/>
             </section>
         );
