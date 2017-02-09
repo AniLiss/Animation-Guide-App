@@ -26,8 +26,7 @@ export default function contentReducer(state = initialState, action) {
 
     case types.LOAD_CONTENT:
     return Object.assign({}, state, {
-      selected_section: action.title,
-      sections: state.sections[action.title]
+      selected_section: action.title
     });
 
     default:
