@@ -1,8 +1,11 @@
 import React from 'react';
-import SearchInput, {createFilter} from 'react-search-input'
+import SearchInput, {createFilter} from 'react-search-input';
+import cancelBtn from './../../img/letter-x.svg';
+import slon from './../../img/slon.jpg';
 
 const MenuSearch = React.createClass({
     getInitialState() {
+        console.log(cancelBtn);
         return {searchTerm: ''}
     },
 
@@ -23,7 +26,7 @@ const MenuSearch = React.createClass({
                     <SearchInput type="search" autoComplete="off" placeholder="Search for a property"
                                  onChange={this.searchUpdated}/>
                 </div>
-
+                <img src={cancelBtn} alt="Slon!"/>
                 <ul className="search__list" id="animation-properties">
                     {filteredMenu.map((item) => {
                         return <li className="search__item" key={item.title}>

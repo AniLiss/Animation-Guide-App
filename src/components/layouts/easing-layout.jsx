@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import store from '../../store';
 import Aside from '../containers/aside';
 import HeaderContent from '../layouts/header-content';
-import UsecaseLayout from './usecase-layout';
+import LayoutContainer from  '../containers/layout-container';
 import {loadLayoutContainer} from '../../actions/header-actions';
 
 
@@ -21,16 +21,19 @@ class EasingLayout extends Component {
   }
 
   render() {
+
+      let easing_sections = this.props.sections;
+
     return (
-      <section>
-        <Aside items={this.props.sections}/>
-        <HeaderContent title='Easing' desc='The CSS properties that allow you to animate almost any other property' />
-        <div>
-            {this.props.sections.map((a) => {
-                return <UsecaseLayout key={a.title} name={a.title}/>
-            })}
-        </div>
-      </section>
+      <div>
+          <HeaderContent title='Easing'
+                         desc='The CSS properties that allow you to animate almost any other property' />
+
+          <main className="main">
+              <Aside items={easing_sections}/>
+              <LayoutContainer sections={easing_sections} id={this.props.selected_section}/>
+          </main>
+      </div>
       );
   }
 }

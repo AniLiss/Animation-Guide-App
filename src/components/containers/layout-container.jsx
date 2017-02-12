@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Property from '../views/property';
 
-
 class LayoutContainer extends Component {
     render() {
         return (
@@ -10,7 +9,6 @@ class LayoutContainer extends Component {
                     {this.props.sections.map((a) => {
                        return <Property key={a.title} name={a.title} />
                     })}
-
                 </div>
             </div>
         )
