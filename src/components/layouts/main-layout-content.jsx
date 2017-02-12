@@ -4,7 +4,7 @@
 import React, {Component} from 'react';
 import Aside from '../containers/aside';
 import Header from '../containers/header';
-import Layout from '../containers/layout-content';
+import Layout from '../containers/layout-container';
 
 class MainLayout extends Component {
     render() {

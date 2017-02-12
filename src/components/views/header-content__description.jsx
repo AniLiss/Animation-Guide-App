@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 
 class HeaderContentDescription extends Component {
     render() {
-        return (
-            
-        )
+        return
     }
 }
 

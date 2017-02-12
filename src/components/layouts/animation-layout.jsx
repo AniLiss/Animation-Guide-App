@@ -1,38 +1,43 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
+import store from '../../store';
 import Aside from '../containers/aside';
 import HeaderContent from '../layouts/header-content';
-import store from '../../store';
-import { loadLayoutContainer } from '../../actions/header-actions';
+import LayoutContainer from  '../containers/layout-container';
+// import UsecaseLayout from '../layouts/usecase-layout';
+import {loadLayoutContainer} from '../../actions/header-actions';
 
-
-const mapStateToProps = function(store) {
-  return {
-    selected_section: store.contentState.selected_section,
-    sections: store.contentState.sections.animation
-  };
+const mapStateToProps = function (store) {
+    return {
+        selected_section: store.contentState.selected_section,
+        sections: store.contentState.sections
+    };
 };
 
 class AnimationLayout extends Component {
+    componentDidMount() {
+        store.dispatch(loadLayoutContainer('animation'));
+    }
 
-  componentDidMount() {
-    store.dispatch(loadLayoutContainer('animation'));
-  }
+    render() {
 
-  render() {
-    return (
-      <section>
-        <Aside items={this.props.sections} />
-        <HeaderContent title='Animation' desc='The CSS properties that allow you to animate almost any other property' />
-        <div>    
-         {this.props.sections.map((a) => {
-            return <p key={a.title}>{a.title}</p>
-          } )}
-        </div>
+        let animation_sections = this.props.sections;
 
-      </section>
-      );
-  }
+        return (
+            <HeaderContent title='Animation'
+                           desc='The CSS properties that allow you to animate almost any other property'/>,
+
+                <main className="main">
+                    <Aside items={animation_sections}/>
+
+                    <div className="layout-content">
+
+                        <LayoutContainer sections={animation_sections}/>
+
+                    </div>
+                </main>
+        );
+    }
 }
 
 export default connect(mapStateToProps)(AnimationLayout);
