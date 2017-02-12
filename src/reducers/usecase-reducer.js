@@ -5,7 +5,7 @@ const usecaseData = {
     {
       id: 1,
       usecase_value: "0s",
-      usecase_description: "The animation will wait <b>zero</b> seconds, and thus start right away."
+      usecase_description: "The animation will wait zero seconds, and thus start right away."
     },
     {
       id: 2,
@@ -28,12 +28,12 @@ const usecaseData = {
   "animation-duration": [
   {
     id: 5,
-    usecase_value: "5800s",
+    usecase_value: "8s",
     usecase_description: "You can use milliseconds instead of seconds, with the keyword ms"
   },
   {
     id: 6,
-    usecase_value: "-800s",
+    usecase_value: "5800ms",
     usecase_description: "You can use negative values: the animation will start as if it had already been playing for 500ms"
   }],
   "animation-timing-function": [

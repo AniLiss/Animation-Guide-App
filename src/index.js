@@ -1,19 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+import {Provider} from 'react-redux';
 import store from './store';
 import router from './router';
+import './sass/style.scss';
 
 ReactDOM.render(
-    <Provider store={store}>{router}</Provider>,
-    document.getElementById('root')
+  <Provider store={store}>{router}</Provider>,
+  document.getElementById('root')
 );
-// if (module.hot) {
-//   module.hot.accept({router}, () => {
-//     const NextApp = require({router}).default;
-//     ReactDOM.render(
-//       <NextApp />,
-//       document.getElementById('root')
-//     );
-//   });
-// }
+
+var propertyUsecaseList = document.querySelectorAll('.property__use-case-list');
+var propertyUsecase = null;
+
+for (let i = 0; i < propertyUsecaseList.length; i++) {
+  propertyUsecaseList[i].childNodes[0].querySelector('.property__animated-object').classList.add('property__animated-object--default');
+}

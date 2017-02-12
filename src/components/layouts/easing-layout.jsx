@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import store from '../../store';
 import Aside from '../containers/aside';
 import HeaderContent from '../layouts/header-content';
-import UsecaseLayout from '../layouts/usecase-layout';
+import UsecaseLayout from './usecase-layout';
 import {loadLayoutContainer} from '../../actions/header-actions';
 
 
@@ -19,7 +19,7 @@ class EasingLayout extends Component {
   componentDidMount() {
     store.dispatch(loadLayoutContainer('easing'));
   }
-  //
+
   render() {
     return (
       <section>
@@ -34,4 +34,5 @@ class EasingLayout extends Component {
       );
   }
 }
+
 export default connect(mapStateToProps)(EasingLayout);

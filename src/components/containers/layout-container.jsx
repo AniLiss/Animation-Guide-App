@@ -6,7 +6,7 @@ class LayoutContainer extends Component {
     render() {
         return (
             <div className="layout-content">
-                <div className="properties">
+                <div className="properties" id={this.props.id}>
                     {this.props.sections.map((a) => {
                        return <Property key={a.title} name={a.title} />
                     })}

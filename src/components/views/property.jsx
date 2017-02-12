@@ -4,7 +4,7 @@ import UsecaseLayout from '../layouts/usecase-layout';
 class Property extends Component {
     render() {
         return (
-            <section className="property">
+            <section className="property" id={this.props.name}>
                 <header className="property__header">
                     <h2 className="property__name">
                         <a href="#"><span>#</span>{this.props.name}</a>

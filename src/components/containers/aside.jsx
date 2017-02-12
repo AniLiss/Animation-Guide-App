@@ -8,9 +8,9 @@ class Aside extends Component {
     return (
       <aside className="menu">
         <div className="header__logo-wrapper">
-          <h1 className='logo'>
+          <div className='logo'>
             <img src={logo} alt='logo'/>
-          </h1>
+          </div>
         </div>
 
           <MenuCollection />
