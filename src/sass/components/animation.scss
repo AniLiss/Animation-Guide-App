@@ -1,0 +1,63 @@
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(300px);
+  }
+}
+
+#animation-delay {
+  .property__animated-object {
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+
+    &--default {
+      animation-delay: 0s;
+    }
+  }
+}
+
+#animation-direction {
+  .property__animated-object {
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-direction: reverse;
+
+    &--default {
+      animation-direction: normal;
+    }
+  }
+}
+
+#animation-duration {
+  .property__animated-object {
+    animation-name: moveRight;
+    animation-duration: 8s;
+
+    &--default {
+      animation-duration: 5800ms;
+    }
+  }
+}
+#easing {
+  .property__animated-object {
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+  }
+}
+
+#ease {
+  .property__animated-object {
+    animation-timing-function: ease;
+  }
+}
+
+#ease-in {
+  .property__animated-object {
+    animation-timing-function: ease-in;
+  }
+}

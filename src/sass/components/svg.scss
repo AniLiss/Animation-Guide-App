@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+.text--transparent {
+  fill: transparent;
+}
+
+.anim-shape {
+  -webkit-transform-origin: 0x 150px;
+  -ms-transform-origin: 0x 150px;
+  transform-origin: 0x 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  -ms-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 3s forwards;
+  animation: moving-panel 3s forwards;
+  animation-delay: 1.5s;
+}
+
+.colortext .anim-shape:nth-child(1) {
+  fill: #0E1826;
+}
+
+.colortext .anim-shape:nth-child(2) {
+  fill: #166973;
+}
+
+.colortext .anim-shape:nth-child(3) {
+  fill: #65BFA6;
+}
+
+.colortext .anim-shape:nth-child(4) {
+  fill: #F2CD5C;
+}
+
+.colortext .anim-shape:nth-child(5) {
+  fill: #F26444;
+}
+
+.shadow {
+  -webkit-transform: translate(10px, 10px);
+  -ms-transform: translate(10px, 10px);
+  transform: translate(3px, 3px);
+}
+
+.anim-shape--shadow {
+  fill: #000;
+  fill-opacity: .2;
+}
+
+@-webkit-keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+
+@keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+
+.svg-text {
+  font-size: 74px;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  height: 30px;
+  width: 150px;
+  top: 16px;
+  left: 15px;
+
+  &:nth-child(4) {
+    left: 100px;
+    margin-top: 2px;
+  }
+}
+
+.b-mountain {
+  //height: 100%;
+  animation-name: grow;
+  animation-duration: 2s;
+  width: 65px;
+  margin-right: 65px;
+
+  &:nth-child(3) {
+    margin-right: 0;
+    width: 50px;
+  }
+}
+
+@keyframes grow {
+  0% {
+    //height: 0;
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    //height: 100%;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
