@@ -3,52 +3,52 @@ import * as types from '../actions/action-types';
 const usecaseData = {
   "animation-delay": [
     {
-      id: 1,
+      id: "a_delay-s",
       usecase_value: "0s",
       usecase_description: "The animation will wait zero seconds, and thus start right away."
     },
     {
-      id: 2,
-      usecase_value: "1.8s",
+      id: "a_delay-ms",
+      usecase_value: "2500ms",
       usecase_description: "You can use decimal values in seconds with the keyword s"
     }
   ],
   "animation-direction": [
     {
-      id: 3,
+      id: "a_direction-normal",
       "usecase_value": "normal",
       "usecase_description": "The animation will wait zero seconds, and thus start right away."
     },
     {
-      id: 4,
+      id: "a_direction-reverse",
       "usecase_value": "reverse",
       "usecase_description": "You can use decimal values in seconds with the keyword s"
     }
   ],
   "animation-duration": [
   {
-    id: 5,
+    id: "a_duration-s",
     usecase_value: "8s",
     usecase_description: "You can use milliseconds instead of seconds, with the keyword ms"
   },
   {
-    id: 6,
+    id: "a_duration-ms",
     usecase_value: "5800ms",
     usecase_description: "You can use negative values: the animation will start as if it had already been playing for 500ms"
   }],
   "animation-timing-function": [
     {
-      id: 7,
+      id: "atf-linear",
       usecase_value: "linear",
       usecase_description: "The animation has a *constant speed."
     },
     {
-      id: 8,
+      id: "atf-ease",
       usecase_value: "ease",
       usecase_description: "The animation starts slowly, accelerates in the middle, and slows down at the end."
     },
     {
-      id: 9,
+      id: "atf-ease-in",
       usecase_value: "ease-in",
       usecase_description: "The animation starts slowly, and accelerates gradually until the end."
     },

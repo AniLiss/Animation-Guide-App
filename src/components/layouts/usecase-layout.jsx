@@ -19,11 +19,12 @@ class UsecaseLayout extends Component {
             <div className="property__use-case-list">
                 {this.props.use_cases.map((a) => {
                     return (
-                        <div className="property__use-case" key={a.id}>
+                        <div className={"property__use-case " + a.id} key={a.id}>
                             <div className="property__use-case-info">
                                 <div className="property__use-case-header">
-                                    <code className="property__use-case-name" data-tooltip="Click to copy"
-                                          data-clipboard-text="animation-delay: 0s;">{this.props.name}: {a.usecase_value};</code>
+                                    <copy-button class="property__use-case-name" data-tooltip="Click to copy" target-text={this.props.name + ": " + a.usecase_value + ";"}>{this.props.name}: {a.usecase_value};</copy-button>
+                                    {/*<code className="property__use-case-name" data-tooltip="Click to copy"*/}
+                                          {/*data-clipboard-text="animation-delay: 0s;">{this.props.name}: {a.usecase_value};</code>*/}
                                 </div>
 
                                 <ul className="property__use-case-description">
@@ -53,6 +54,5 @@ class UsecaseLayout extends Component {
         );
     }
 }
-
 export default connect(mapStateToProps)(UsecaseLayout);
 

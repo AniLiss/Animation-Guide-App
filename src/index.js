@@ -11,8 +11,24 @@ ReactDOM.render(
 );
 
 var propertyUsecaseList = document.querySelectorAll('.property__use-case-list');
-var propertyUsecase = null;
+// var toggleMenuBtn = document.querySelector('.menu__collection-item');
+var menuCollection = document.querySelector('.menu__collection');
 
 for (let i = 0; i < propertyUsecaseList.length; i++) {
   propertyUsecaseList[i].childNodes[0].querySelector('.property__animated-object').classList.add('property__animated-object--default');
 }
+
+// var toggleMenu = function toggleMenu(e) {
+//   e.target.classList.toggle('.menu__collection-item--active');
+// }
+
+menuCollection.addEventListener('click', function (e) {
+  e.target.parentNode.classList.toggle('menu__collection-item--active');
+  // console.log(e.target.parentNode);
+});
+
+var logo = document.querySelector('.logo');
+
+logo.addEventListener('click', function (e) {
+
+})

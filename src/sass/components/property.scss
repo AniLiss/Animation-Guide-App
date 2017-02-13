@@ -73,12 +73,22 @@
 }
 
 .property__use-case-name {
-  background-color: #ffeb1a;
-  border-radius: 2px;
-  padding: 3px 7px 5px;
-  margin-right: 20px;
-  cursor: pointer;
   position: relative;
+
+  button {
+    font-family: monospace;
+    font-size: 16px;
+    border: none;
+    background-color: #ffeb1a;
+    border-radius: 2px;
+    padding: 3px 7px 5px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 .property__use-case-name[data-tooltip]:before {
@@ -87,8 +97,8 @@
   bottom: 100%;
   color: #fff;
   content: attr(data-tooltip);
-  font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
-  font-size: 0.6rem;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 0.7rem;
   left: 50%;
   line-height: 1.2;
   opacity: 0;

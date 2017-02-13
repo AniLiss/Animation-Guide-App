@@ -1,7 +1,7 @@
 import * as types from '../actions/action-types';
 
 const myData = {
-  "animation": [{
+  animation: [{
     title: 'animation-delay',
     link: 'animation_delay'
   }, {

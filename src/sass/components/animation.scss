@@ -12,7 +12,7 @@
   .property__animated-object {
     animation-name: moveRight;
     animation-duration: 2s;
-    animation-delay: 1.2s;
+    animation-delay: 2500ms;
 
     &--default {
       animation-delay: 0s;
@@ -35,28 +35,32 @@
 #animation-duration {
   .property__animated-object {
     animation-name: moveRight;
-    animation-duration: 8s;
+    animation-duration: 5800ms;
 
     &--default {
-      animation-duration: 5800ms;
+      animation-duration: 8s;
     }
   }
 }
-#easing {
+
+#animation-timing-function {
   .property__animated-object {
     animation-name: moveRight;
     animation-duration: 2s;
-    animation-timing-function: linear;
+
+    &--default {
+      animation-timing-function: linear;
+    }
   }
 }
 
-#ease {
+.atf-ease {
   .property__animated-object {
     animation-timing-function: ease;
   }
 }
 
-#ease-in {
+.atf-ease-in {
   .property__animated-object {
     animation-timing-function: ease-in;
   }
