@@ -22,6 +22,9 @@
     border: 1px solid #92fffb;
     color: #92fffb;
     position: relative;
+    white-space: nowrap;
+
+
 
     &:hover {
       filter: drop-shadow(0 0 2px #aa969f);
@@ -49,7 +52,7 @@
     &:hover,
     &:active {
       color: #fff;
-      font-size: 14px;
+      font-size: 12px;
       outline: none;
     }
 

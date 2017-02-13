@@ -1,0 +1,13 @@
+// devices widths
+$mobile-width: "min-width: 600px";
+$tablet-width: "min-width: 1000px";
+$desktop-width: "min-width: 1200px";
+
+
+@media ($tablet-width) {
+  // width: 668px;
+}
+
+@media ($desktop-width) {
+  // width: 1050px;
+}

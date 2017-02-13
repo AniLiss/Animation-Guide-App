@@ -23,9 +23,7 @@ li {
 }
 
 ul {
-  li {
-    list-style: none;
-  }
+  list-style: none;
 }
 
 a {
@@ -33,6 +31,9 @@ a {
 }
 
 .main {
-  display: flex;
   margin: 0 auto;
+
+  @media ($tablet-width) {
+    display: flex;
+  }
 }

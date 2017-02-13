@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from '../../img/logo.svg';
+// import logo from '../../img/logo.svg';
 import MenuCollection from '../views/menu__collection';
 import MenuSearch from '../layouts/menu__search'
 
@@ -9,7 +9,7 @@ class Aside extends Component {
       <aside className="menu">
         <div className="header__logo-wrapper">
           <div className='logo'>
-            <img src={logo} alt='logo'/>
+            {/*<img src={logo} alt='logo'/>*/}
           </div>
         </div>
 

@@ -1,7 +1,18 @@
 .layout-content {
-  margin-right: 0;
-  margin-left: auto;
-  width: 80%;
-  margin-top: 105px;
-  box-sizing: border-box;
+
+}
+
+@media ($tablet-width) {
+  .layout-content {
+    margin-right: 0;
+    margin-left: auto;
+    width: 80%;
+    margin-top: 150px;
+  }
+}
+
+@media ($desktop-width) {
+  .layout-content {
+    margin-top: 105px;
+  }
 }

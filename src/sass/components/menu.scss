@@ -1,9 +1,6 @@
 .menu {
-  position: fixed;
-  min-width: 225px;
-  width: 20%;
-  box-sizing: border-box;
   font-size: 15px;
+  width: 100%;
 
   &__collection {
     padding: 20px;
@@ -27,12 +24,16 @@
         color: #fff;
       }
     }
+    &:not(.menu__collection-item--active) {
+      cursor: pointer;
+    }
 
     &--active {
       background-color: #ed2d32;
 
       a {
         color: #fff;
+        cursor: default;
       }
     }
   }
@@ -123,5 +124,14 @@
       font-weight: 700;
       color: #3c0091;
     }
+  }
+}
+
+@media ($tablet-width) {
+  .menu {
+    position: fixed;
+    min-width: 225px;
+    width: 20%;
+    font-size: 15px;
   }
 }
