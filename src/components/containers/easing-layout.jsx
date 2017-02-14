@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import store from '../../store';
-import Aside from '../containers/aside';
-import HeaderContent from '../layouts/header-content';
-import LayoutContainer from  '../containers/layout-container';
+import Aside from './aside';
+import HeaderContent from '../views/header-content';
+import LayoutContainer from  './layout-container';
 import {loadLayoutContainer} from '../../actions/header-actions';
-
 
 const mapStateToProps = function(store) {
   return {

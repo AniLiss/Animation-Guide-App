@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-// import logo from '../../img/logo.svg';
 import MenuCollection from '../views/menu__collection';
-import MenuSearch from '../layouts/menu__search'
+import MenuSearch from './menu__search'
 
 class Aside extends Component {
     render() {

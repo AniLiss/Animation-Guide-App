@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import UsecaseLayout from '../layouts/usecase-layout';
+import UsecaseLayout from './usecase-layout';
 
 class Property extends Component {
     render() {

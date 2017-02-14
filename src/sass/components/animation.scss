@@ -10,7 +10,7 @@
 
 #animation-delay {
   .property__animated-object {
-    animation-name: moveRight;
+    //animation-name: moveRight;
     animation-duration: 2s;
     animation-delay: 2500ms;
 
@@ -22,7 +22,7 @@
 
 #animation-direction {
   .property__animated-object {
-    animation-name: moveRight;
+    //animation-name: moveRight;
     animation-duration: 2s;
     animation-direction: reverse;
 
@@ -34,7 +34,7 @@
 
 #animation-duration {
   .property__animated-object {
-    animation-name: moveRight;
+    //animation-name: moveRight;
     animation-duration: 5800ms;
 
     &--default {
@@ -45,7 +45,7 @@
 
 #animation-timing-function {
   .property__animated-object {
-    animation-name: moveRight;
+    //animation-name: moveRight;
     animation-duration: 2s;
 
     &--default {
@@ -65,3 +65,13 @@
     animation-timing-function: ease-in;
   }
 }
+
+.property__animated-object--is-animated {
+  background-color: red;
+  with: 15px;
+  height: 27px;
+  width: 19px;
+  animation-name: moveRight;
+  animation-iteration-count: infinite;
+}
+

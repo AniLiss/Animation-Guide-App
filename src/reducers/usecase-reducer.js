@@ -1,5 +1,3 @@
-import * as types from '../actions/action-types';
-
 const usecaseData = {
   "animation-delay": [
     {
@@ -26,16 +24,16 @@ const usecaseData = {
     }
   ],
   "animation-duration": [
-  {
-    id: "a_duration-s",
-    usecase_value: "8s",
-    usecase_description: "You can use milliseconds instead of seconds, with the keyword ms"
-  },
-  {
-    id: "a_duration-ms",
-    usecase_value: "5800ms",
-    usecase_description: "You can use negative values: the animation will start as if it had already been playing for 500ms"
-  }],
+    {
+      id: "a_duration-s",
+      usecase_value: "8s",
+      usecase_description: "You can use milliseconds instead of seconds, with the keyword ms"
+    },
+    {
+      id: "a_duration-ms",
+      usecase_value: "5800ms",
+      usecase_description: "You can use negative values: the animation will start as if it had already been playing for 500ms"
+    }],
   "animation-timing-function": [
     {
       id: "atf-linear",
@@ -59,16 +57,6 @@ const initialState = {
   use_cases: usecaseData
 }
 
-export default function usecaseReducer(state = initialState, action) {
-
-  switch (action.type) {
-
-    case types.LOAD_USECASE:
-      return {
-        ...state,
-        use_cases: usecaseData[action.title]
-      };
-    default:
-      return state;
-  }
+export default function usecaseReducer(state = initialState) {
+  return state;
 }

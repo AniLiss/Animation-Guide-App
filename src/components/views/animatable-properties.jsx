@@ -3,11 +3,11 @@ import {Link} from 'react-router';
 
 import animatableProperties from '../../data/propsData.json';
 
-class AnimatablePropertiesPage extends Component {
+export default class AnimatablePropertiesPage extends Component {
     render() {
         return (
             <div className="animatable-props">
-                <Link to="/" className="button button--close">Home</Link>
+                <Link to="/" className="button button--close"></Link>
 
                 <ul className="animatable-props__list">
                     {animatableProperties.animatable_properties.map((aProp) => {
@@ -21,5 +21,3 @@ class AnimatablePropertiesPage extends Component {
         );
     }
 }
-
-export default AnimatablePropertiesPage;

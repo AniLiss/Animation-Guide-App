@@ -21,6 +21,7 @@ const initialState = {
   selected_section: '',
   sections: []
 }
+
 export default function contentReducer(state = initialState, action) {
 
   switch (action.type) {
