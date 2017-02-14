@@ -3,7 +3,6 @@
     color: #ed2d32;
   }
   to {
-    //color: #12002b;
     color: #3c0091;
   }
 }
@@ -12,40 +11,56 @@
   margin-bottom: 20px;
   box-shadow: 0px 4px 11px -3px rgba(60, 0, 145, 0.61);
   border-bottom: 1px solid rgba(60, 0, 145, 0.59);
-  padding: 0 40px 20px 40px;
-  box-sizing: border-box;
+  padding: 20px;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
 
-  &__name {
-    display: inline-block;
-    margin-right: 40px;
-    vertical-align: middle;
+.property__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    a {
-      color: #ed2d32;
+  .button--purple {
+    align-self: center;
+    // flex-basis: 40%;
+    max-width: 150px;
+  }
+}
 
-      &:hover {
-        text-decoration: underline;
-        animation-name: opacity;
-        animation-duration: 0.7s;
-        animation-fill-mode: forwards;
+.property__name {
+  // display: inline-block;
+  // margin-right: 40px;
+  // vertical-align: middle;
+  // flex-basis: 58%;
+  margin-right: 20px;
 
-        span {
-          display: inline-block;
-          transform: rotate(360deg);
-          transition-duration: 0.7s;
-        }
+  a {
+    color: #ed2d32;
+
+    &:hover {
+      text-decoration: underline;
+      animation-name: opacity;
+      animation-duration: 0.7s;
+      animation-fill-mode: forwards;
+
+      span {
+        display: inline-block;
+        transform: rotate(360deg);
+        transition-duration: 0.7s;
       }
     }
   }
 }
 
+.property__description {
+  flex-basis: 100%;
+}
+
 .property__use-case {
   margin-top: 15px;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -89,43 +104,39 @@
       outline: none;
     }
   }
+
+  &[data-tooltip] {
+    &:before {
+      background-color: #333;
+      border-radius: 2px;
+      bottom: 100%;
+      color: #fff;
+      content: attr(data-tooltip);
+      font-family: "Source Sans Pro", "Arial",sans-serif;
+      font-size: 0.6rem;
+      left: 50%;
+      line-height: 1.2;
+      opacity: 0;
+      padding: 0.5em 0.6em;
+      pointer-events: none;
+      position: absolute;
+      text-align: center;
+      transform: translateX(-50%) translateY(0);
+      transition-duration: 300ms;
+      transition-property: opacity, transform;
+      visibility: hidden;
+      white-space: nowrap;
+    }
+
+    &:hover:before {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-4px);
+      visibility: visible;
+    }
+  }
 }
 
-.property__use-case-name[data-tooltip]:before {
-  background-color: #333;
-  border-radius: 2px;
-  bottom: 100%;
-  color: #fff;
-  content: attr(data-tooltip);
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 0.7rem;
-  left: 50%;
-  line-height: 1.2;
-  opacity: 0;
-  padding: 0.5em 0.6em;
-  pointer-events: none;
-  position: absolute;
-  text-align: center;
-  -webkit-transform: translateX(-50%) translateY(0);
-  transform: translateX(-50%) translateY(0);
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: opacity, transform;
-  transition-property: opacity, transform, -webkit-transform;
-  visibility: hidden;
-  white-space: nowrap;
-}
-
-.property__use-case-name[data-tooltip]:hover:before {
-  opacity: 1;
-  -webkit-transform: translateX(-50%) translateY(-4px);
-  transform: translateX(-50%) translateY(-4px);
-  visibility: visible;
-}
-
-.property__use-case-value[name="animation-value"] {
+.property__use-case-value[name='animation-value'] {
   width: 40px;
   cursor: text;
   background-color: #fff;
@@ -135,11 +146,32 @@
   padding-top: 10px;
 }
 
-.property__use-case-options--short {
-  width: 40px;
+.property__use-case-options {
+
+  &--short {
+    width: 40px;
+  }
 }
 
 .property__use-case-info {
   flex-basis: 50%;
   margin-right: 10px;
+}
+
+
+@media ($tablet-width) {
+  .property {
+    padding: 0 40px 20px 40px;
+  }
+  .property__use-case {
+    display: flex;
+  }
+}
+@media ($mobile-width) {
+  .property__header {
+    justify-content: flex-start;
+  }
+  .property__name {
+    margin-right: 50px;
+  }
 }

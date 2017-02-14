@@ -1,27 +1,21 @@
 .header {
   display: flex;
   background-color: #3c0091;
-  padding: 10px 40px;
+  padding: 10px 20px;
   align-items: center;
-  position: fixed;
-  max-width: 1349px;
-  box-sizing: border-box;
   margin: 0 auto;
   overflow: hidden;
-  width: 80%;
-  right: 0;
   box-shadow: 4px 14px 52px -14px #92fffb;
   border-bottom: 2px solid #92fffb;
   z-index: 100;
 
   &__logo-wrapper {
-    overflow: hidden;
-    min-width: 225px;
-    min-height: 105px;
+   display: none;
   }
 }
 
 .header-content {
+  padding-right: 10px;
   &__title {
     //color: #933e63;
     color: #ffffff;
@@ -56,3 +50,18 @@
   flex-basis: 100%;
 }
 
+@media ($tablet-width) {
+  .header {
+    padding: 10px 40px;
+    position: fixed;
+    max-width: 1349px;
+    width: 80%;
+    right: 0;
+
+    &__logo-wrapper {
+      overflow: hidden;
+      min-width: 225px;
+      min-height: 105px;
+    }
+  }
+}

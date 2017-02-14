@@ -1,0 +1,60 @@
+.animatable-props {
+  padding: 20px;
+  position: relative;
+
+  .button {
+
+    &--close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5px;
+
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-image:
+        linear-gradient(45deg, transparent 48%, #000 48%, #000 52%, transparent 52%),
+        linear-gradient(-45deg, transparent 48%, #000 48%, #000 52%, transparent 52%);
+      background-position: 10px 10px;
+
+      &:hover {
+        background-color: rgba(#000, .1);
+      }
+    }
+  }
+}
+
+.animatable-props__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 0 auto;
+
+  li {
+    flex-basis: 100%;
+    padding: 3px;
+  }
+}
+@media ($mobile-width) {
+  .animatable-props__list {
+
+    li {
+      flex-basis: 48%;
+      padding: 3px;
+    }
+  }
+}
+
+@media ($tablet-width) {
+  .animatable-props__list {
+    justify-content: center;
+
+    li {
+      flex-basis: 26%;
+      padding: 3px;
+    }
+  }
+}
