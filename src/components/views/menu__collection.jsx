@@ -13,8 +13,8 @@ class MenuCollection extends Component {
     render() {
         return (
             <ul className='menu__collection'>
-                <li className={this.generateItemClassName('/')}>
-                    <Link to='/'>Animation</Link>
+                <li className={this.generateItemClassName('/animation')}>
+                    <Link to='/animation'>Animation</Link>
                 </li>
                 <li className={this.generateItemClassName('/easing')}>
                     <Link to='/easing'>Easing</Link>

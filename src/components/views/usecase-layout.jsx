@@ -14,6 +14,15 @@ const mapStateToProps = function (store, props) {
 
 class UsecaseLayout extends Component {
 
+    componentDidMount() {
+        var propertyUsecaseList = document.querySelectorAll('.property__use-case-list');
+
+        for (let i = 0; i < propertyUsecaseList.length; i++) {
+            propertyUsecaseList[i].childNodes[0].querySelector('.property__animated-object').classList.add('property__animated-object--default');
+        }
+
+    }
+
     render() {
         return (
             <div className="property__use-case-list">

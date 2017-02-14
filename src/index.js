@@ -10,8 +10,8 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-var propertyUsecaseList = document.querySelectorAll('.property__use-case-list');
-
-for (let i = 0; i < propertyUsecaseList.length; i++) {
-  propertyUsecaseList[i].childNodes[0].querySelector('.property__animated-object').classList.add('property__animated-object--default');
-}
+// var propertyUsecaseList = document.querySelectorAll('.property__use-case-list');
+//
+// for (let i = 0; i < propertyUsecaseList.length; i++) {
+//   propertyUsecaseList[i].childNodes[0].querySelector('.property__animated-object').classList.add('property__animated-object--default');
+// }

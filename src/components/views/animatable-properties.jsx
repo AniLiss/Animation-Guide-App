@@ -10,7 +10,7 @@ export default class AnimatablePropertiesPage extends Component {
             <div className="animatable-props">
                 <div className="animatable-props__header">
                     <Logotype />
-                    <Link to="/" className="button button--close"></Link>
+                    <Link to="/animation" className="button button--close"></Link>
                 </div>
                 <ul className="animatable-props__list">
                     {animatableProperties.animatable_properties.map((aProp) => {
