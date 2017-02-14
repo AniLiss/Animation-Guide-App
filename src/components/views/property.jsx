@@ -3,17 +3,28 @@ import UsecaseLayout from './usecase-layout';
 
 class Property extends Component {
 
-        animateProperty = function (e) {
-            let propContainer = e.target.parentNode.parentNode;
-            let animatedObject = propContainer.querySelectorAll('.property__animated-object');
-            for (let i = 0; i < animatedObject.length; i++) {
-                animatedObject[i].classList.toggle('property__animated-object--is-animated');
-            }
+    animateProperty = function (e) {
+        let propContainer = e.target.parentNode.parentNode;
+        let animatedObject = propContainer.querySelectorAll('.property__animated-object');
+        for (let i = 0; i < animatedObject.length; i++) {
+            animatedObject[i].classList.toggle('property__animated-object--is-animated');
         }
+    }
+
+    handlerOnClickToProp(evt) {
+        evt.preventDefault();
+        let element = evt.currentTarget;
+
+        if (document.body.offsetWidth < 1000 && element.classList.contains('property--short')) {
+            element.classList.remove('property--short');
+        } else {
+            element.classList.add('property--short');
+        }
+    }
 
     render() {
         return (
-            <section className="property" id={this.props.name}>
+            <section className="property property--short" id={this.props.name} onClick={this.handlerOnClickToProp}>
                 <header className="property__header">
                     <h2 className="property__name">
                         <a href="#"><span>#</span>{this.props.name}</a>

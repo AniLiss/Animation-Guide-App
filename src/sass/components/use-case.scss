@@ -1,5 +1,5 @@
 .property__preview-frame {
-  min-width: 400px;
+  min-width: 280px;
   height: 120px;
   border: 1px solid #bfbfbf;
   border-radius: 2px;
@@ -29,6 +29,12 @@
 
 .property__preview-output {
   position: relative;
+}
+
+@media ($tablet-width) {
+  .property__preview-frame {
+    min-width: 400px;
+  }
 }
 
 @-webkit-keyframes eye {

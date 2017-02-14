@@ -40,6 +40,7 @@
 
   &__search {
     padding: 0 20px;
+    display: none;
 
     input {
       width: 100%;
@@ -99,8 +100,8 @@
   a {
     color: #3c0091;
     position: relative;
-    //color: rgba(0,0,0,0.2);
     text-shadow: none;
+    white-space: nowrap;
 
     &::before {
       color: #3c0091;
@@ -129,7 +130,17 @@
   .menu {
     position: fixed;
     min-width: 225px;
-    width: 20%;
+    width: 23%;
     font-size: 15px;
+
+    &__search {
+      display: block;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .menu {
+    width: 20%;
   }
 }
