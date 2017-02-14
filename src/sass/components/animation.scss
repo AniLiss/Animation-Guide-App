@@ -67,10 +67,6 @@
 }
 
 .property__animated-object--is-animated {
-  background-color: red;
-  with: 15px;
-  height: 27px;
-  width: 19px;
   animation-name: moveRight;
   animation-iteration-count: infinite;
 }

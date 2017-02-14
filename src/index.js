@@ -11,7 +11,7 @@ ReactDOM.render(
 );
 
 var propertyUsecaseList = document.querySelectorAll('.property__use-case-list');
-var menuCollection = document.querySelector('.menu__collection');
+// var menuCollection = document.querySelector('.menu__collection');
 
 for (let i = 0; i < propertyUsecaseList.length; i++) {
   propertyUsecaseList[i].childNodes[0].querySelector('.property__animated-object').classList.add('property__animated-object--default');
