@@ -12,9 +12,34 @@
   box-shadow: 0px 4px 11px -3px rgba(60, 0, 145, 0.61);
   border-bottom: 1px solid rgba(60, 0, 145, 0.59);
   padding: 20px;
+  visibility: visible;
+  height: 100%;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--short {
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    .property__use-case-list {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      min-height: 0;
+      transition-property: min-height, opacity;
+      transition-duration: .5s;
+    }
+    .button {
+      display: none;
+    }
+    .property__description {
+      display: none;
+    }
+    .property__name {
+      margin: 0;
+    }
   }
 }
 
@@ -31,10 +56,6 @@
 }
 
 .property__name {
-  // display: inline-block;
-  // margin-right: 40px;
-  // vertical-align: middle;
-  // flex-basis: 58%;
   margin-right: 20px;
 
   a {
@@ -62,6 +83,15 @@
 .property__use-case {
   margin-top: 15px;
   justify-content: space-between;
+}
+
+.property__use-case-list {
+  visibility: visible;
+  opacity: 1;
+  min-height: 400px;
+  // height: 100%;
+  transition-property: min-height, opacity;
+  transition-duration: .5s;
 }
 
 .property__use-case-header {
@@ -158,15 +188,6 @@
   margin-right: 10px;
 }
 
-
-@media ($tablet-width) {
-  .property {
-    padding: 0 40px 20px 40px;
-  }
-  .property__use-case {
-    display: flex;
-  }
-}
 @media ($mobile-width) {
   .property__header {
     justify-content: flex-start;
@@ -174,4 +195,46 @@
   .property__name {
     margin-right: 50px;
   }
+}
+
+@media ($tablet-width) {
+  .property {
+    padding: 0 40px 20px 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--short {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      visibility: visible;
+      height: 100%;
+
+      .property__use-case-list {
+        visibility: visible;
+        height: 100%;
+        opacity: 1;
+        transition: height 2s ease-in-out;
+      }
+
+      .button {
+        display: block;
+      }
+
+      .property__description {
+        display: block;
+      }
+
+      .property__name {
+        margin: .83em 50px .83em 0;
+      }
+    }
+  }
+
+  .property__use-case {
+    display: flex;
+  }
+
+
 }

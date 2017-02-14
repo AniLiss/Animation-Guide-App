@@ -2,15 +2,14 @@ import React, {Component} from 'react';
 // import logo from '../../img/logo.svg';
 import MenuCollection from '../views/menu__collection';
 import MenuSearch from '../layouts/menu__search'
+import Logotype from '../views/logotype';
 
 class Aside extends Component {
     render() {
         return (
             <aside className="menu">
                 <div className="header__logo-wrapper">
-                    <div className='logo'>
-                        {/*<img src={logo} alt='logo'/>*/}
-                    </div>
+                    <Logotype />
                 </div>
 
                 <MenuCollection />
