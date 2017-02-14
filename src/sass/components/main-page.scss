@@ -1,0 +1,43 @@
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding: 100px 0;
+  background-color: #ffffdb;
+  min-height: 630px;
+}
+
+.main-page__wrapper {
+  // margin: 0 auto;
+  min-height: 300px;
+  max-height: 400px;
+  max-width: 1000px;
+  min-width: 850px;
+  position: relative;
+
+  .b-mountain {
+    width: 450px;
+
+    &:nth-child(3) {
+      width: 300px;
+    }
+  }
+
+  .svg-text {
+    height: 100px;
+    width: auto;
+    top: 200px;
+    left: 200px;
+
+    &:nth-child(4) {
+      left: 510px;
+    }
+  }
+}
+
+.main-page__to-site {
+  display: block;
+  .anim-shape {
+    animation-delay: 3s;
+  }
+}

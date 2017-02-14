@@ -6,7 +6,7 @@ class MenuCollection extends Component {
         return (
             <ul className='menu__collection'>
                 <li className='menu__collection-item menu__collection-item--active'>
-                    <Link to='/'>Animation</Link>
+                    <Link to='/animation'>Animation</Link>
                 </li>
                 <li className='menu__collection-item'>
                     <Link to='/easing'>Easing</Link>
