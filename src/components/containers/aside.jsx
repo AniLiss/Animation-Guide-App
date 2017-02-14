@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import MenuCollection from '../views/menu__collection';
-import MenuSearch from '../layouts/menu__search'
+import MenuSearch from '../containers/menu__search'
 import Logotype from '../views/logotype';
 
 class Aside extends Component {

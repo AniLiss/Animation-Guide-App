@@ -9,6 +9,13 @@ class Property extends Component {
         for (let i = 0; i < animatedObject.length; i++) {
             animatedObject[i].classList.toggle('property__animated-object--is-animated');
         }
+        if (e.target.innerHTML === "Play") {
+            e.target.innerHTML = "Stop";
+            e.target.style = "transform: scale(0.9)"
+        } else {
+            e.target.innerHTML = "Play";
+            e.target.style = "transform: scale(1)"
+        }
     }
 
     handlerOnClickToProp(evt) {
