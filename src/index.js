@@ -23,8 +23,12 @@ for (let i = 0; i < propertyUsecaseList.length; i++) {
 // }
 
 menuCollection.addEventListener('click', function (e) {
-  e.target.parentNode.classList.toggle('menu__collection-item--active');
-  // console.log(e.target.parentNode);
+  for (var i = 0; i < menuCollection.length; i++) {
+    menuCollection.childNodes[i].className.remove('menu__collection-item--active');
+  }
+  console.log(menuCollection.childNodes);
+  e.target.parentNode.classList.add('menu__collection-item--active');
+  console.log(e.target.parentNode);
 });
 
 var logo = document.querySelector('.logo');

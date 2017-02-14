@@ -8,6 +8,7 @@ var getClientEnvironment = require('./env');
 var paths = require('./paths');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
 var publicPath = '/';
@@ -118,7 +119,8 @@ module.exports = {
           /\.(js|jsx)$/,
           /\.css$/,
           /\.json$/,
-          /\.svg$/
+          /\.svg$/,
+          /\.jpg$/
         ],
         loader: 'url',
         query: {
@@ -155,31 +157,51 @@ module.exports = {
         loader: 'json'
       },
       // "file" loader for svg
+      // {
+      //   test: /\.svg$/,
+      //   loader: 'file',
+      //   query: {
+      //     name: 'static/media/[name].[ext]'
+      //     //.[hash:8]
+      //   }
+      // },
+      // {
+      //   test: /\.svg$/,
+      //   loader: '!url?limit=8192!svgo'
+      // },
+      //for jpg
+      // {
+      //   test: /\.jpg$/,
+      //   loader: 'file',
+      //   query: {
+      //     name: 'static/media/[name].[ext]'
+      //     //.[hash:8]
+      //   }
+      // },
       {
-        test: /\.svg$/,
-        loader: 'file',
-        query: {
-          name: 'static/media/[name].[ext]'
-        //.[hash:8]
-        }
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!resolve-url!sass-loader?sourceMap')
       },
-        {
-            test: /\.scss$/,
-            loader: ExtractTextPlugin.extract('style-loader', 'css-loader!resolve-url!sass-loader?sourceMap')
-        },
-        {
-            test: /\.css$/,
-            loader: ExtractTextPlugin.extract('style', 'css?importLoaders=1!postcss')
-        },
-        {
-            test: /\.woff2?$|\.ttf$|\.eot$|\.svg$|\.png|\.jpe?g|\.gif$/,
-            loader: 'file-loader'
-        }
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style', 'css?importLoaders=1!postcss')
+      },
+      {
+        test: /\.woff2?$|\.ttf$|\.eot$|\.svg$|\.png|\.jpe?g|\.gif$/,
+        loader: 'file-loader'
+      },
+      // {
+      //   test: /\.(jpe?g|png|gif|svg)$/i,
+      //   loaders: [
+      //     'file?hash=sha512&digest=hex&name=[hash].[ext]',
+      //     'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+      //   ]
+      // }
     ]
   },
 
   // We use PostCSS for autoprefixing only.
-  postcss: function() {
+  postcss: function () {
     return [
       autoprefixer({
         browsers: [
@@ -192,9 +214,9 @@ module.exports = {
     ];
   },
   plugins: [
-      new ExtractTextPlugin('style.css', {
-          allChunks: true
-      }),
+    new ExtractTextPlugin('style.css', {
+      allChunks: true
+    }),
     // Makes the public URL available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     // In development, this will be an empty string.
