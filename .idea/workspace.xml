@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3784645-965c-4357-8b45-c0ebfdeaf1a3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/containers/aside.jsx" afterPath="$PROJECT_DIR$/src/components/containers/aside.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/views/property.jsx" afterPath="$PROJECT_DIR$/src/components/views/property.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/button.scss" afterPath="$PROJECT_DIR$/src/sass/components/button.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/views/main-page.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/components/main-page.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/views/menu__collection.jsx" afterPath="$PROJECT_DIR$/src/components/views/menu__collection.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router.js" afterPath="$PROJECT_DIR$/src/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/style.scss" afterPath="$PROJECT_DIR$/src/sass/style.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +26,7 @@
     <favorites_list name="AnGuideAp" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6731278">
+    <splitter split-orientation="horizontal" split-proportion="0.7751323">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="aside.jsx" pinned="false" current-in-tab="false">
@@ -51,7 +53,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="property.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="property.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/views/property.jsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="274">
@@ -74,11 +76,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="menu__collection.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="menu__collection.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/views/menu__collection.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="25" />
+                <state relative-caret-position="420">
+                  <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -278,12 +280,12 @@
         <option value="$PROJECT_DIR$/src/sass/components/use-case.scss" />
         <option value="$PROJECT_DIR$/src/components/views/usecase-layout.jsx" />
         <option value="$PROJECT_DIR$/src/sass/components/animation.scss" />
-        <option value="$PROJECT_DIR$/src/components/views/menu__collection.jsx" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/views/animatable-properties.jsx" />
         <option value="$PROJECT_DIR$/src/components/containers/aside.jsx" />
         <option value="$PROJECT_DIR$/src/sass/components/button.scss" />
         <option value="$PROJECT_DIR$/src/components/views/property.jsx" />
+        <option value="$PROJECT_DIR$/src/components/views/menu__collection.jsx" />
       </list>
     </option>
   </component>
@@ -650,12 +652,12 @@
       <option name="presentableId" value="Default" />
       <updated>1486674413382</updated>
       <workItem from="1486674416429" duration="11917000" />
-      <workItem from="1486758824936" duration="159851000" />
+      <workItem from="1486758824936" duration="159993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171768000" />
+    <option name="totallyTimeSpent" value="171910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -669,7 +671,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16071428" sideWeight="0.14417745" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3970588" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2157738" sideWeight="0.52068126" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1116,14 +1118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/views/menu__collection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/components/button.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -1140,6 +1134,14 @@
             <element signature="e#0#39#0" expanded="true" />
             <element signature="n#!!block;n#handlerOnClickToProp#0;n#Property#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/views/menu__collection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
